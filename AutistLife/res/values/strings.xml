@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">AutistLife</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="diemen_logo">Diemen</string>
     <string name="action_settings">Settings</string>
 
 </resources>
