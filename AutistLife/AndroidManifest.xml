@@ -31,6 +31,12 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+          <service android:name=".TheService" ></service>
+          <receiver android:name=".MyReceiver" android:enabled="true">
+  	<intent-filter>
+     <action android:name="com.diemenautistlife.TheService.MY_ACTION"></action>
+  	</intent-filter>
+</receiver>
         
     </application>
 
