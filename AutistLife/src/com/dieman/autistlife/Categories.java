@@ -22,14 +22,21 @@ public class Categories extends Activity{
 	    
 	    gridview.setOnItemClickListener(new OnItemClickListener() {
 	        public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-	            Toast.makeText(Categories.this, "WTF" + position, Toast.LENGTH_SHORT).show();
+	          //  Toast.makeText(Categories.this, "WTF" + position, Toast.LENGTH_SHORT).show();
 	            
-	            Intent toIntent = new Intent("com.diemen.autistlife.CATEGORIES");
+	            Intent intent = null; 
 	            
 	            switch(position)
 	            {
-	            case 1:
+	            case 0: intent = new Intent("com.diemen.autistlife.MOVIES");
+	            		break;
+	            	
+	            default:
+	            	Toast.makeText(Categories.this, "Hey! We'll Update this Soon.", Toast.LENGTH_SHORT).show();
+	            	//intent = new Intent("com.diemen.autistlife.CATEGORIES");
 	            }
+    			startActivity(intent);
+    		
 	        }
 	    });
 	    

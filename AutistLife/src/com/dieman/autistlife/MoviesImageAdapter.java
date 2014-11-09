@@ -7,16 +7,16 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
-public class ImageAdapter extends BaseAdapter{
+public class MoviesImageAdapter extends BaseAdapter{
 
-	private Context mContext;
+private Context mContext;
 	
-	public ImageAdapter(Context c) {
+	public MoviesImageAdapter(Context c) {
         mContext = c;
     }
-
 	@Override
 	public int getCount() {
+		// TODO Auto-generated method stub
 		return mThumbIds.length;
 	}
 
@@ -51,13 +51,14 @@ public class ImageAdapter extends BaseAdapter{
 		return imageView;
 	}
 
-	 private Integer[] mThumbIds = {
-	            R.drawable.mainmovie,
-	            R.drawable.music,
-	            R.drawable.locations,
-	            R.drawable.friendsmain,
-	            R.drawable.homemain,
-	            R.drawable.familymain
-	    };
 
+	private Integer[] mThumbIds = {
+			R.drawable.mrbean,
+			R.drawable.rapunzelomovie,R.drawable.spiderman,
+            R.drawable.batmanmovie,
+            R.drawable.superman,
+            R.drawable.tomjerry,
+            R.drawable.chachaandfamily
+            
+    };
 }
