@@ -1,7 +1,5 @@
-package com.dieman.util;
+package com.dieman.autistlife;
 
-
-import android.R;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,7 +17,6 @@ public class ImageAdapter extends BaseAdapter{
 
 	@Override
 	public int getCount() {
-		// TODO Auto-generated method stub
 		return mThumbIds.length;
 	}
 
@@ -42,7 +39,7 @@ public class ImageAdapter extends BaseAdapter{
 		if(convertView == null)
 		{
 			imageView = new ImageView(mContext);
-			imageView.setLayoutParams(new GridView.LayoutParams(85,85));
+			imageView.setLayoutParams(new GridView.LayoutParams(80,80));
 			imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
 			imageView.setPadding(5, 5, 5, 5);
 		}
@@ -55,8 +52,15 @@ public class ImageAdapter extends BaseAdapter{
 	}
 
 	 private Integer[] mThumbIds = {
-	            R.drawable.alert_dark_frame
-	            
+	            R.drawable.rock,R.drawable.music,
+	            R.drawable.locations,
+	            R.drawable.rock,
+	            R.drawable.rock,
+	            R.drawable.rock,
+	            R.drawable.rock,
+	            R.drawable.rock,
+	            R.drawable.rock,
+	            R.drawable.rock
 	    };
 
 }

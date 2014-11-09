@@ -1,8 +1,8 @@
 package com.dieman.autistlife;
 
-import com.dieman.util.ImageAdapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -17,11 +17,19 @@ public class Categories extends Activity{
 	    setContentView(R.layout.categories);
 
 	    GridView gridview = (GridView) findViewById(R.id.category_gridview);
-	    gridview.setAdapter(new ImageAdapter(this));
+	    gridview.setAdapter(new ImageAdapter(getApplicationContext()));
+	    
 	    
 	    gridview.setOnItemClickListener(new OnItemClickListener() {
 	        public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-	            Toast.makeText(Categories.this, "" + position, Toast.LENGTH_SHORT).show();
+	            Toast.makeText(Categories.this, "WTF" + position, Toast.LENGTH_SHORT).show();
+	            
+	            Intent toIntent = new Intent("com.diemen.autistlife.CATEGORIES");
+	            
+	            switch(position)
+	            {
+	            case 1:
+	            }
 	        }
 	    });
 	    
